@@ -15,14 +15,17 @@ print('division: ', division)
 print('remainder: ', remainder)
 print('exponential: ', exponential)
 
+# this is an application of a form
 first_name = 'terence'
 last_name = 'nmaju'
 date_of_birth = 1993
 current_year = 2024
 age = current_year - date_of_birth
-country = 'cameroon'
+address = 'antenne orange, logbessou'
 city = 'douala'
-company = 'digitalxpress'
+zipcode = '00237' # zip code is a string because of the leading zero
+country = 'cameroon'
+company = 'digitalxpress web development llc'
 website = 'https://digitalxpress.io'
 
 
@@ -31,7 +34,9 @@ print('last name: ', last_name)
 print('date of birth: ', date_of_birth)
 print('current year: ', current_year)
 print('age: ', age)
-print('country: ', country)
+print('address: ', address)
 print('city: ', city)
+print('zipcode: ', zipcode)
+print('country: ', country)
 print('company: ', company)
 print('website: ', website)

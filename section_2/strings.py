@@ -29,4 +29,10 @@ language = 'python'
 print(len(language)) # there are 6 characters so it starts from index 0 to index 5
 print(language[0:2]) # prints only chracters from index 0 to index 2 (excluding index 2)
 print(language[2:]) # prints from index 2 to the last index
+print(language[-2:]) # prints from 'o' 
+print(language[::-1]) # prints the variable content in reverse
+print(language.count('o')) # prints the number of times 'o' appears in language
 
+city = 'bamenda'
+print(city.count('a')) # count the number of a's in the string
+print(city.find('a')) # finds the first occourance of a

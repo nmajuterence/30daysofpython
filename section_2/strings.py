@@ -35,4 +35,21 @@ print(language.count('o')) # prints the number of times 'o' appears in language
 
 city = 'bamenda'
 print(city.count('a')) # count the number of a's in the string
-print(city.find('a')) # finds the first occourance of a
+print(city.find('a')) # finds the first occourance of 'a'
+
+print('i love python'.capitalize()) # capitalize() capitalizes only the first letter of the string
+print('i love python'.title()) # title() capitalizes the first letter of each word
+
+country = 'cameroon'
+print(country.startswith('ca')) # startswith() checks the string for 'ca'
+print(country.endswith('oon')) # true
+print(country.startswith('C')) # false
+
+skills = ['html', 'css', 'javascript', 'python']
+print(', '.join(skills)) # join() uses the string you provide to join the elements of the list
+
+print('abc'.isalpha()) # true
+print('abc123'.isalnum()) # true
+print('123'.isnumeric()) # true
+print('0x1b3'.isascii()) # true
+

@@ -132,3 +132,15 @@ print('firstname','\t', 'lastname', '\t','age', '\t','city', '\t' 'country')
 print('terence','\t', 'nmaju', '\t','30', '\t','douala', '\t' 'cameroon')
 
 # assignment
+# Concatenate the string 'Thirty', 'Days', 'Of', 'Python' to a single string, 'Thirty Days Of Python'.
+string = ['thirty', 'days', 'of', 'python']
+print(' '.join(string))
+
+# Concatenate the string 'Coding', 'For' , 'All' to a single string, 'Coding For All'.
+string_2 = ['coding', 'for', 'all']
+new_string = ' '.join(string_2)
+print(new_string)
+print(len(new_string))
+print(new_string.upper())
+print(new_string.lower())
+

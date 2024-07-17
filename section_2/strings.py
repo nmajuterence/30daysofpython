@@ -53,3 +53,82 @@ print('abc123'.isalnum()) # true
 print('123'.isnumeric()) # true
 print('0x1b3'.isascii()) # true
 
+# isidentifier() simples test if the string can be a variable name
+# first_name, last_name, year etc
+print('first_name'.isidentifier()) # true
+print('2024year'.isidentifier()) # false because 2024year is not a valid variable name
+
+# replace() this method can replace a string with another string
+slogan = 'welcome to the 2024 JavaScript bootcam with nmaju in cameroon.'
+print(slogan.replace('JavaScript', 'python')) # here JavaScript is replaced with python
+print(slogan.replace('javascript', 'python')) # note that python is case sensitive so this line of code will not work
+
+# exercise
+# recap
+
+first_name = 'terence'
+last_name = 'nmaju'
+age = 30
+city = 'douala'
+country = 'cameroon'
+skills = ['html', 'css', 'javascript', 'python']
+full_name = first_name + ' ' + last_name
+skill_set = ', '.join(skills)
+print(full_name)
+
+# reprint the text below using the variables
+# i am terence nmaju. i am 30 years old. i live in douala, cameroon. i have skills in html, css, javascript, python.
+
+# method 1 - string concatination
+profile_1 = 'i am ' + full_name + '. ' + 'i am ' + str(age) + ' years old. i live in ' + city + ', ' + country + '. i have skills in ' + skill_set + '.'
+print('profile 1: ', profile_1)
+
+# method 2 - .format()
+
+profile_2 = 'i am {}. i am {} years old. i live in {}, {}. i have skills in {}.'.format(full_name, age, city, country, skill_set)
+print('profile 2: ', profile_2)
+
+# method 3 - f string
+
+profile_3 = f'i am {full_name}. i am {age} years old. i live in {city}, {country}. i have skills in {skill_set}.'
+print('profile 3: ', profile_3)
+
+# example
+a = 4
+b = 3
+
+# method 1
+print('%d + %d = %d' %(a, b, a + b))
+print('%d - %d = %d' %(a, b, a - b))
+print('%d * %d = %d' %(a, b, a * b))
+print('%d / %d = %.2f' %(a, b, a / b))
+print('%d %% %d = %d' %(a, b, a % b)) 
+print('%d ** %d = %d' %(a, b, a ** b))
+
+# method 2 
+print('{} + {} = {}'.format(a, b, a + b))
+print('{} - {} = {}'.format(a, b, a - b))
+print('{} * {} = {}'.format(a, b, a * b))
+print('{} / {} = {:.2f}'.format(a, b, a / b))
+print('{} % {} = {}'.format(a, b, a % b)) 
+print('{} ** {} = {}'.format(a, b, a ** b))
+
+# method 3
+div = a / b
+print(f'{a} + {b} = {a + b}')
+print(f'{a} - {b} = {a - b}')
+print(f'{a} * {b} = {a * b}')
+print(f'{a} / {b} = {div:0.2f}') # 0.2f set the float to 2 decimal places
+print(f'{a} % {b} = {a % b}') 
+print(f'{a} ** {b} = {a ** b}')
+
+sentence = 'i love python'
+print(sentence.split()) # split() it can split the sentence into a list of words
+print(sentence.split(' love ')) # here it removes love from the list.
+print('i love python \nvery much') # \n starts the text on a new line.
+print('i don\'t like this') # \ is an escape character
+print('the old cliche of \'an apple a day keep the doctor away\' might not work') # another example
+print('firstname','\t', 'lastname', '\t','age', '\t','city', '\t' 'country')
+print('terence','\t', 'nmaju', '\t','30', '\t','douala', '\t' 'cameroon')
+
+# assignment

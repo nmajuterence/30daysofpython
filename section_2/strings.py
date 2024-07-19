@@ -143,4 +143,27 @@ print(new_string)
 print(len(new_string))
 print(new_string.upper())
 print(new_string.lower())
+print(len(new_string))
+print(new_string.capitalize())
+sentence_case = new_string.title()
+print(sentence_case.swapcase())
+print(new_string[7:])
+print(new_string.find('coding'))
+uncut_str = ' '.join(string_2)
+print(uncut_str.replace('coding', 'python'))
+print(uncut_str.split(' '))
+
+# testing split()
+test_string = 'nmaju,is,a,python,programmer'
+print(test_string.split(',', 4)) # 4 is the number of splits
+
+test_string2 = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
+print(test_string2.split(',')) # using ',' as a seperator
+
+# print the character at index 10
+string_3 = 'Coding For All'
+character_at_index_10 = string_3[10]
+print(character_at_index_10)
+
+
 

@@ -165,5 +165,30 @@ string_3 = 'Coding For All'
 character_at_index_10 = string_3[10]
 print(character_at_index_10)
 
+# print the last index of the string
+last_str_index = string_3[-1] # -1 is the last index
+print(last_str_index)
 
+# create an acronym of the name 'Python For Everyone'
+name = 'Python For Everyone'
+abb_P = name[0]
+abb_F = name[7]
+abb_E = name[11]
+acronym = [abb_P, abb_F, abb_E]
+print('.'.join(acronym))
 
+# use index to determine the position of the first occurrence of C
+main_string = 'Coding For All'
+char = 'C'
+position = main_string.index(char)
+print(position)
+
+# use rfind to determine the position of the last occurrence of l
+test_str = 'Coding For All People'
+char = 'l'
+position_l = test_str.rfind(char)
+print(position_l)
+
+#Use index or find to find the position of the first occurrence of the word 'because'
+bcuz = 'You cannot end a sentence with because because because is a conjunction'
+print(bcuz.find('because'))

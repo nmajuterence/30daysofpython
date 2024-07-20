@@ -193,3 +193,46 @@ print(position_l)
 bcuz = 'You cannot end a sentence with because because because is a conjunction'
 print(bcuz.find('because'))
 
+# slice out the phrase 'because because because'
+slice_sentence = bcuz[31:-17]
+print(slice_sentence)
+
+# does'Coding For All' start with a substring Coding?
+print(test_str.startswith('Coding')) # true
+print(test_str.endswith('coding')) # false
+
+# remove the left and right trailing spaces 
+given_string = '    Coding For All      '
+print(given_string.strip()) # strip() remove spaces
+
+# join the list with a hash with space string
+list_of_names = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+list_update = '# '.join(list_of_names)
+print(list_update)
+
+# use a tab escape sequence to write the following lines
+name = 'nmaju'
+age = 30
+country = 'cameroon'
+city = 'douala'
+
+print(f'Name    Age     Country     City')
+print(f'{name}  {age}   {country}   {city}')
+
+# use the string formatting method to display the following
+radius = 10
+area = 3.14 * radius ** 2
+print('the area of a circle with radius {} is {} meters square.'.format(10, round(3.14 * radius ** 2)))
+
+# string formating
+x = 8
+y = 6
+
+division = (x / y)
+print(f'{x} + {y} = {x + y}')
+print(f'{x} - {y} = {x - y}')
+print(f'{x} * {y} = {x * y}')
+print(f'{x} / {y} = {division:0.2f}')
+print(f'{x} % {y} = {x % y}')
+print(f'{x} // {y} = {x // y}')
+print(f'{x} ** {y} = {x ** y}')

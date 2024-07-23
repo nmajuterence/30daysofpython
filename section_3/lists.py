@@ -104,4 +104,52 @@ ages1 = [22, 19, 24, 25, 30, 26, 24, 25, 24]
 ages1.sort()
 print('using sort: ',ages1) # sort() also mutates the data
 
-# exercise
+# exercises: level 1
+new_list = list()
+new_list1 = ['nmaju', 'kiara', 'frida', 'maureen', 'enih', 'noella']
+print('length of new list 1: ',len(new_list1))
+print('first item: ',new_list1[0]) # first item
+print('middle item: ',new_list1[3]) # middle item
+print('last item: ',new_list1[5]) # last item
+mixed_data_types = ['nmaju', 30, 1.75, 'married', 'antenne orange']
+companies = ['facebook', 'google', 'microsoft', 'apple', 'ibm', 'oracle', 'amazon']
+print('companies: ',companies)
+print('number of companies: ', len(companies)) # 7 companies
+print('the first company is ',companies[0]) # facebook is the first company
+print('the middle company is ',companies[3]) # apple is the middle company
+print('the last company is ',companies[-1]) # amazon is the last company
+companies[0] = 'meta' # facebook is now meta
+print(companies)
+companies.append('IT company')
+print(companies)
+companies.insert(3,'IT company')
+del companies[-1] # deletes IT company at the last index
+print(companies)
+print(companies.index('ibm'))
+companies[5] = companies[5].upper()
+print(companies)
+# print('#; '.join(companies))
+print('bygtee' in companies)
+lst = ['facebook', 'google', 'microsoft', 'apple', 'ibm', 'oracle', 'amazon']
+lst.sort() # asending order
+lst.sort(reverse=True) # descending order
+print(lst)
+"""print(lst[:3]) # slicing the first 3 companies
+print(lst[-3:]) # slicing the last 3 companies
+print(lst[3:4]) # slicing the middle company"""
+lst.pop(0)
+print(lst)
+lst.pop(3)
+print(lst)
+lst.pop()
+print(lst)
+lst.clear()
+print(lst)
+del lst # it deletes the list completely
+front_end = ['html', 'css', 'js', 'react', 'redux']
+back_end = ['node', 'express', 'mongodb']
+full_stack = front_end + back_end
+print(full_stack)
+full_stack.insert(9, 'python')
+full_stack.insert(10, 'sql')
+print(full_stack)

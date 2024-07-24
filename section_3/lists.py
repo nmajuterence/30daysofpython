@@ -192,6 +192,18 @@ print(max_diff)
 # Find the middle country(ies) in the countries list
 from countries import countries
 n = len(countries)
+print(n)
 mid_index = n // 2
+print(mid_index)
+print(countries[96])
 print(countries[mid_index - 1])
 print(countries[mid_index])
+first_half = countries[0:97]
+second_half = countries[97:]
+print(first_half)
+print(second_half)
+all_countries = ['china', 'russia', 'usa', 'finland', 'sweden', 'norway', 'denmark']
+non_scandic_countries = all_countries[0:3]
+scandic_countries = all_countries[3:]
+print('non-scandic countries: ',non_scandic_countries)
+print('scandic countries: ',scandic_countries)

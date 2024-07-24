@@ -153,3 +153,45 @@ print(full_stack)
 full_stack.insert(9, 'python')
 full_stack.insert(10, 'sql')
 print(full_stack)
+
+# Exercise: level 2 - The following is a list of 10 students ages:
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24] 
+
+# Sort the list and find the min and max age
+sorted_ages = sorted(ages)
+print(sorted_ages)
+
+# Add the min age and the max age again to the list
+min_age = min(sorted_ages)
+max_age = max(sorted_ages)
+sorted_ages.append(min_age)
+sorted_ages.append(max_age)
+print(sorted_ages)
+
+# Find the median age (one middle item or two middle items divided by two)
+n = len(sorted_ages)
+middle_index = n // 2
+median_age = (sorted_ages[middle_index - 1] + sorted_ages[middle_index])/2
+print(median_age)
+
+# Find the average age (sum of all items divided by their number)
+average_age = sum(sorted_ages) / n
+print(average_age)
+
+# Find the range of the ages (max minus min)
+range_of_ages = max_age - min_age
+print(range_of_ages)
+
+# Compare the value of (min - average) and (max - average), use abs() method
+# diferences
+min_diff = abs(min_age - average_age)
+max_diff = abs(max_age - average_age)
+print(min_diff)
+print(max_diff)
+
+# Find the middle country(ies) in the countries list
+from countries import countries
+n = len(countries)
+mid_index = n // 2
+print(countries[mid_index - 1])
+print(countries[mid_index])

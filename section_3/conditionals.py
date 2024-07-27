@@ -13,4 +13,11 @@ if type(a) == int:
 else:
     print('{} is a float'.format(a))
 
-# short hand
+# exercise 1
+age = int(input('Enter your age: '))
+if age >= 18:
+    print('you are old enough to learn to drive')
+else:
+    print(f'you need {18 - age} more years to drive') # the expression {18 - age} calculates the number of year rmaining to drive.
+
+

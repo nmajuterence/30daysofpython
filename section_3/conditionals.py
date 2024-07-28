@@ -13,7 +13,7 @@ if type(a) == int:
 else:
     print('{} is a float'.format(a))
 
-"""# exercise level 1 a
+# exercise level 1 a
 age = int(input('Enter your age: '))
 if age >= 18:
     print('you are old enough to learn to drive')
@@ -64,15 +64,15 @@ elif month == 'march' or 'april' or 'may':
 elif month == 'june' or 'july' or 'august':
     print('the season is summer')
 else:
-    print('please enter a real month or check your spelling!')"""
-    
+    print('please enter a real month or check your spelling!')
+
 # exercise level 3a
 person={
     'first_name': 'nmaju',
     'last_name': 'terence',
     'age': 30,
     'country': 'cameroon',
-    'is_marred': True,
+    'is_married': True,
     'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address': {
         'street': 'antenne orange',
@@ -103,3 +103,12 @@ elif 'Node' in person['skills'] and 'React' in person['skills'] and 'MongoDB' in
     print('he is a fullstack developer')
 else:
     print('unknown title')
+
+# exercise level 3d
+if person['is_married'] == True: 
+    if person['country'] == 'cameroon':
+        print(f"{person['first_name'] + person['last_name']} lives in {person['country']}. He is married.")
+    else:
+        print('country does not match')
+else:
+    print('country dose not match')

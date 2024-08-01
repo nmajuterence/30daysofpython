@@ -35,6 +35,52 @@ numbers = [1, 3, 5, 7, 9]
 for i in numbers:
     print(i)
 
-"""for i in range(0, 101, 10):
-    print(i)"""
+for i in range(0, 101, 10):
+    print(i)
     
+countries_new = ['cameroon', 'nigeria', 'ghana', 'south africa', 'rwanda', 'kenya', 'niger']
+countries_with_ni = []
+countries_without_ni = []
+
+# countries with 'ni'
+for i in countries_new:
+    if 'ni' in i:
+        countries_with_ni.append(i) # create new list with countries having 'ni'
+print(countries_with_ni)
+
+# countries without ni
+for i in countries_new:
+    if 'ni' not in i:
+        countries_without_ni.append(i)
+print(countries_without_ni)
+
+# filter even numbers from 1 to 100
+evens = []
+for i in range(101):
+    if i % 2 == 0:
+        evens.append(i)
+print(evens)
+
+# filter odd numbers from 1 to 100
+odds = []
+for i in range(101):
+    if i % 2 is not 0:
+        odds.append(i)
+print(odds)
+
+# square numbers
+for i in range(1, 11):
+    print('{} * {} = {}'.format(i, i, i * i)) 
+
+# using contine
+nums1 = [0, 1, 2, 3, -7, 4, 5, 6]
+for i in nums1:
+    if i < 0:
+        continue # continue skips the literal which matches the condition.
+    print(i)
+
+# using break
+for i in nums1:
+    if i < 0:
+        break # break stops the loop when the condition is fufilled.
+    print(i)

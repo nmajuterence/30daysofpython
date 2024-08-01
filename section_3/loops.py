@@ -34,3 +34,7 @@ for num in nums:
 numbers = [1, 3, 5, 7, 9]
 for i in numbers:
     print(i)
+
+"""for i in range(0, 101, 10):
+    print(i)"""
+    

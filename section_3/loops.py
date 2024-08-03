@@ -72,7 +72,7 @@ print(odds)
 for i in range(1, 11):
     print('{} * {} = {}'.format(i, i, i * i)) 
 
-# using contine
+"""# using contine
 nums1 = [0, 1, 2, 3, -7, 4, 5, 6]
 for i in nums1:
     if i < 0:
@@ -83,4 +83,36 @@ for i in nums1:
 for i in nums1:
     if i < 0:
         break # break stops the loop when the condition is fufilled.
-    print(i)
+    print(i)"""
+
+# excercises
+# level 1
+# 1. Iterate 0 to 10 using for loop, do the same using while loop.
+# for loop
+num_1 = []
+for i in range(10):
+    num_1.append(i)
+print(f'iterate from 0 to 10: {num_1}')
+
+# while loop
+num_2 = []
+i = 0
+while i < 10:
+    num_2.append(i)
+    i = i + 1
+print(num_2)
+
+# 2. Iterate 10 to 0 using for loop, do the same using while loop.
+# for loop
+num_1a = []
+for i in range(9, -1, -1):
+    num_1a.append(i)
+print(num_1a)
+
+# while loop
+num_2a = []
+i = 0
+while i > -10:
+    i = i - 1
+    num_2a.append(i)
+print(num_2a)

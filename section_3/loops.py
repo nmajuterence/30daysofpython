@@ -116,3 +116,9 @@ while i > -10:
     i = i - 1
     num_2a.append(i)
 print(num_2a)
+
+# 3. Write a loop that makes seven calls to print(), so we get on the output the following triangle:
+i = 1
+while i <= 7:
+    print('#' * i)
+    i += 1

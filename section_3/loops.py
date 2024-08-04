@@ -122,3 +122,8 @@ i = 1
 while i <= 7:
     print('#' * i)
     i += 1
+    
+# for loop
+hash_char = '#'
+for char in hash_char:
+    print(hash_char[i])

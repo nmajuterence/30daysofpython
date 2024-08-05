@@ -118,12 +118,66 @@ while i > -10:
 print(num_2a)
 
 # 3. Write a loop that makes seven calls to print(), so we get on the output the following triangle:
-i = 1
-while i <= 7:
-    print('#' * i)
-    i += 1
+for i in range(7):
+    print('#' * (i + 1))
     
-# for loop
-hash_char = '#'
-for char in hash_char:
-    print(hash_char[i])
+# 4. Use nested loops to create the following:
+for i in range(8):
+    print('# ' * 8)
+
+# 5. print the following pattern:
+for i in range(11):
+    print('{} * {} = {}'.format(i, i, i * i))
+
+# 6. Iterate through the list, ['Python', 'Numpy','Pandas','Django', 'Flask'] using a for loop and print out the items.
+lst2 = ['Python', 'Numpy','Pandas','Django', 'Flask']
+for item in lst2:
+    print(item)
+
+# 7. Use for loop to iterate from 0 to 100 and print only even numbers
+evens = []
+for i in range(101):
+    if i % 2 == 0:
+        evens.append(i)
+print(evens)
+
+# Use for loop to iterate from 0 to 100 and print only odd numbers
+odds = []
+for i in range(101):
+    if i % 2 is not 0:
+        odds.append(i)
+print(odds)
+
+# exercises: level 2
+# 1. Use for loop to iterate from 0 to 100 and print the sum of all numbers.
+total = 0
+for i in range(101):
+    total += i
+print(total)
+
+# Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
+sum_of_evens = 0
+sum_of_odds = 0
+for i in range(101):
+    if i % 2 == 0:
+        sum_of_evens += i
+    else:
+        sum_of_odds += i
+print(f'the sum of even numbers is {sum_of_evens}')
+print(f'the sum of odd numbers is {sum_of_odds}')
+
+# exercise level 3
+# 1. Go to the data folder and use the countries.py file. Loop through the countries and extract all the countries containing the word land.
+from countries import countries
+countries_land = []
+for item in countries:
+    if 'land' in item:
+        countries_land.append(item)
+print(countries_land)
+
+# 2. This is a fruit list, ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop.
+fruit_list = ['banana', 'orange', 'mango', 'lemon'] 
+reversed_list = []
+for i in range(len(fruit_list) - 1, -1, -1):
+    reversed_list.append(fruit_list[i])
+print(reversed_list)

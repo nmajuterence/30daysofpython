@@ -40,5 +40,6 @@ print('symetric difference of a and b = '.format(symdiff))
 
 # converting a list to a set
 
-fruits = ['bannan', 'orange', 'mango', 'orange', 'lemon', 'apple']
+fruits = ['bannana', 'orange', 'mango', 'orange', 'lemon', 'apple']
 print(set(fruits)) # sets don't accept duplicate items. here is how to convert a list to a set
+fruits.add(['grape'])

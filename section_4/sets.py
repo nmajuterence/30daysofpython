@@ -42,4 +42,5 @@ print('symetric difference of a and b = '.format(symdiff))
 
 fruits = ['bannana', 'orange', 'mango', 'orange', 'lemon', 'apple']
 print(set(fruits)) # sets don't accept duplicate items. here is how to convert a list to a set
-a.fruits(['mango', 'grape']) # adding items using a list
+countries = {'cameroon', 'nigeria', 'rwanda', 'egypt', 'kenya', 'south africa'}# adding items using a list
+print(countries)

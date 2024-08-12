@@ -44,3 +44,7 @@ fruits = ['bannana', 'orange', 'mango', 'orange', 'lemon', 'apple']
 print(set(fruits)) # sets don't accept duplicate items. here is how to convert a list to a set
 countries = {'cameroon', 'nigeria', 'rwanda', 'egypt', 'kenya', 'south africa'}# adding items using a list
 print(countries)
+countries.add('ghana')
+print(countries)
+countries.update(['zambia', 'uganda', 'tanzania', 'botswana'])
+print(countries)

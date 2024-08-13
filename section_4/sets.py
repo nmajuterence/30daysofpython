@@ -48,3 +48,5 @@ countries.add('ghana')
 print(countries)
 countries.update(['zambia', 'uganda', 'tanzania', 'botswana'])
 print(countries)
+countries.pop() # pop() removes any random country in the set
+print(countries)
